@@ -14,6 +14,11 @@ user_data = {}
 
 logging.basicConfig(level=logging.INFO)
 
+
+# @dp.message(Command('video'))
+# async def video(message: Message):
+#     await message.answer_animation(animation='https://youtu.be/h_CaoxnX_Vc?si=Bv0fYDCNPPMMua2J')
+
 @dp.message(CommandStart())
 async def start(message: Message):
     await message.answer("Здарова Скуф, ты не занят?")
@@ -49,10 +54,6 @@ async def guess_number(message: Message):
             del user_data[user_id]
     except ValueError:
         await message.reply("И чо это такое? Введи как человек или кто ты там.")
-
-
-
-
 
 
 async def main():

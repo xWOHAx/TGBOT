@@ -1,4 +1,12 @@
+configtest.py
+news.db
+confog.py
+notes.db
+fsm.db
 config.py
+configg.py
+config2.py
+config3.py
 lesson_7.py
 /venv
 /_pycache_
